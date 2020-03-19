@@ -121,3 +121,4 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
   - [query-string](https://www.npmjs.com/package/query-string) - Parse and stringify URL query strings
   - [moment](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
   - [lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras
+  - [recharts](http://recharts.org/en-US/) - A composable charting library built on React components
