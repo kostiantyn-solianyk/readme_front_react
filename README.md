@@ -50,7 +50,7 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
     ```
      
     **[Redux Thunk](https://github.com/reduxjs/redux-thunk)**
-    **Redux Thunk** is a **[middleware](https://searchapparchitecture.techtarget.com/definition/middleware)** that lets you call action creators that return a function instead of an action object. That function receives the store’s dispatch method, which is then used to dispatch regular synchronous actions inside the body of the function once the asynchronous operations have completed.
+    is a **[middleware](https://searchapparchitecture.techtarget.com/definition/middleware)** that lets you call action creators that return a function instead of an action object. That function receives the store’s dispatch method, which is then used to dispatch regular synchronous actions inside the body of the function once the asynchronous operations have completed.
     
     **Installations**
     ```
@@ -111,4 +111,13 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
   - **[Prettier](https://prettier.io/)**
   - **[precommit hooks](https://githooks.com/)**
   
-## Useful libraries / utilities => recommended
+## Recommended
+  - [axios](https://github.com/axios/axios) - promise based HTTP client for the browser and node.js
+  - [react-select](https://react-select.com/home) - A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
+  - [redux-form](https://redux-form.com/8.3.0/) - The best way to manage your form state in Redux
+  - [redux-form-input-masks](https://www.npmjs.com/package/redux-form-input-masks) - offer simple APIs to create these masks
+  - [react-quill](https://github.com/zenoamaro/react-quill) - simple editor
+  - [react-datepicker](https://www.npmjs.com/package/react-datepicker) - A simple and reusable Datepicker component for React
+  - [query-string](https://www.npmjs.com/package/query-string) - Parse and stringify URL query strings
+  - [moment](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
+  - [lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras
