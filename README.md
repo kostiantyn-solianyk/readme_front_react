@@ -59,6 +59,14 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
     yarn add redux-thunk
     ```
     
+- **Forms** 
+
+    **[Formik](https://jaredpalmer.com/formik/docs/api/formik)** - Is a component that helps you with building forms. It uses a render props pattern made popular by libraries like React Motion and React Router.
+    `12.7kB. 50% smaller than redux-form`
+    
+    **[React Hook Form](https://react-hook-form.com/)** - Performant, flexible and extensible forms with easy-to-use validation.
+    `8.5kB. ~25% faster than Redux Form`
+    
 - **Routing In App** 
 
     **[React Router](https://reacttraining.com/react-router/web/guides/quick-start)** If you have a lot of routes, especially with a lot of nested **Route** and **Switch** components, you may want to pick React Router. It will be 100% backward compatible, offering an incremental migration path to the new hook-based APIs.
@@ -88,12 +96,12 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
                 └── Button/
                 └── DatePicker/
                 └── Tabs/
-            ├── domain/ - redux actions, reducers, selectors + redux config
+            ├── store/ - redux actions, reducers, selectors + redux config
             ├── layouts/ - wrapper components with one centralized design principle with the same styles
                 └── AuthLayout/                               
                 └── MainLayout/                              
             └── pages/ - app screens
-                └── exampleScreen/
+                └── ExampleScreen/
                     ├──components/
                     ├── index.js
                     └── styles.sass
@@ -108,13 +116,47 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
     
 - **Styleguide** 
   - **[ESLint](https://eslint.org/)**
+  Example: `.eslintrc.js`
+        
+  ```
+  module.exports = {
+    extends: 'airbnb',
+    parser: 'babel-eslint',
+    rules: {
+      'react/jsx-key': 2,
+      'react/no-unused-prop-types': 2,
+      'object-curly-spacing': ['error', 'always'],
+      'react/jsx-filename-extension': ['error', {'extensions': ['.jsx', '.js']}]
+    },
+    settings: {
+      'import/resolver': {
+        node: {paths: ['./src'], extensions: ['.js']}
+      },
+    },
+    plugins: []
+  };
+  ```
+
   - **[Prettier](https://prettier.io/)**
-  - **[precommit hooks](https://githooks.com/)**
+  Example: `.prettierrc`
+      
+  ```
+  module.exports = {
+      bracketSpacing: true,
+      jsxBracketSameLine: false,
+      singleQuote: true,
+      jsxSingleQuote: true,
+      trailingComma: 'all',
+      semi: false,
+      printWidth: 120
+  };
+  ```
+
+  - **[precommit hooks](https://githooks.com/)** - You can find any useful hooks in doc. Required hook is **precommit**.
   
 ## Recommended
   - [axios](https://github.com/axios/axios) - promise based HTTP client for the browser and node.js
   - [react-select](https://react-select.com/home) - A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
-  - [redux-form](https://redux-form.com/8.3.0/) - The best way to manage your form state in Redux
   - [redux-form-input-masks](https://www.npmjs.com/package/redux-form-input-masks) - offer simple APIs to create these masks
   - [react-quill](https://github.com/zenoamaro/react-quill) - simple editor
   - [react-datepicker](https://www.npmjs.com/package/react-datepicker) - A simple and reusable Datepicker component for React
@@ -122,3 +164,10 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
   - [moment](https://momentjs.com/) - Parse, validate, manipulate, and display dates and times in JavaScript
   - [lodash](https://lodash.com/) - A modern JavaScript utility library delivering modularity, performance & extras
   - [recharts](http://recharts.org/en-US/) - A composable charting library built on React components
+  - [google-map-react](https://github.com/google-map-react/google-map-react) - Google map library for react that allows rendering components as markers
+  - [react-table](https://www.npmjs.com/package/react-table) - Hooks for building lightweight, fast and extendable datagrids for React
+  - [socket.io-client](https://www.npmjs.com/package/socket.io-client) - Socket.IO enables real-time, bidirectional and event-based communication
+  
+## Utilities
+  
+  - **[Api client](ApiHelpers.js)** API client. Based on axios library.
