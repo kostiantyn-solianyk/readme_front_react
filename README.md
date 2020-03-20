@@ -30,12 +30,7 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
     Before getting started with **Redux** you should know principles of **[Flux methodology](https://ru.wikipedia.org/wiki/Flux-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0)**.
     The Redux store is the main aspect of your application.
     
-    **Installations**
-    ```
-    npm install redux
-    # or
-    yarn add redux
-    ```
+    Also we recommend **[redux-toolkit](https://redux-toolkit.js.org/)**. It helps configure Redux store. Provide utils for create reducers, actions and manage store. Has createAsyncThunk func in beta. It allow make async action and call request to API.
   
 - **Side Effects** 
    
