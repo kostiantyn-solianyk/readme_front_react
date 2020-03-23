@@ -98,8 +98,8 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
             └── pages/ - app screens
                 └── ExampleScreen/
                     ├──components/
-                    ├── index.js
-                    └── styles.sass
+                    ├── index.jsx
+                    └── styles.scss
                 └── index.jsx - wrapper for Routes
             ├── routes/ - Routes [represented as array or ...], returns <Switch> Component
                 └── index.jsx - wrapper for Routes | will be imported in src/pages/index.jsx as <Switch> Component
@@ -142,7 +142,7 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
       singleQuote: true,
       jsxSingleQuote: true,
       trailingComma: 'all',
-      semi: false,
+      semi: true,
       printWidth: 120
   };
   ```
@@ -152,7 +152,6 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
 ## Recommended
   - [axios](https://github.com/axios/axios) - promise based HTTP client for the browser and node.js
   - [react-select](https://react-select.com/home) - A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
-  - [redux-form-input-masks](https://www.npmjs.com/package/redux-form-input-masks) - offer simple APIs to create these masks
   - [react-quill](https://github.com/zenoamaro/react-quill) - simple editor
   - [react-datepicker](https://www.npmjs.com/package/react-datepicker) - A simple and reusable Datepicker component for React
   - [query-string](https://www.npmjs.com/package/query-string) - Parse and stringify URL query strings
