@@ -109,6 +109,13 @@ If you are going to use state manager use => **Redux DevTools** for debugging ap
                 
     ```
     
+- **Styling.** We have so many great options for styling React components. Your choice should serve your use case and personal preferences.
+  - **[Styled-components](https://github.com/styled-components/styled-components)** - is a library for React and React Native that allows you to use component-level styles in your application that are written with a mixture of JavaScript and CSS.
+  - **[CSS-in-JS - JSS](https://cssinjs.org/react-jss/?v=v10.1.1)** - Allows you to think about styles on a component level with out worrying about styles defined elsewhere. There is also a way to access **props** in your jss file. Example: `color: props => props.labelColor`
+  - **[Processors - SCSS](https://create-react-app.dev/docs/adding-a-sass-stylesheet/)** - Sass is supported in create-react-app 2.0 out of the box and becomes a common way to style components.
+  
+  These three, most used, but remember there is no right way to style components. Depends on how you work, the tools you use, etc. So discuss them with your team or ask recommendations and choose the one you'll integrate to your project in the right way.
+    
 - **Styleguide** 
   - **[ESLint](https://eslint.org/)**
   Example: `.eslintrc.js`
